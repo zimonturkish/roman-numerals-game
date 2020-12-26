@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Roman Numerals</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>“Do you know Roman Numerals?”</h1>
+    </header>
+    <h6>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet.
+    </h6>
+    <h4>Rules:</h4>
+    <h5>
+      <ol>
+        <li>you have to write the roman numeral</li>
+        <li>after 3 mistakes you lose the match and the game restarts automatically</li>
+        <li>after 10 attempts the game ends and you will get your score:</li>
+      </ol>
+    </h5>
+    <div id="rand"></div>
+    <script type="text/javascript" src="denkwerk.js"></script>
+    <form onsubmit="elaborator(); return false">
+      <input type="text" id="number" />
+      <button class="btn btn-primary">Submit</button>
+      <input
+        class="btn btn-secondary"
+        type="button"
+        value="Restart"
+        onclick="restartGame();"
+      />
+    </form>
+    <div id="message"></div>
+  </body>
+</html>
